@@ -1,0 +1,68 @@
+<!-- Version avec un background fix et on mets les icons et les texts dans 1 seule div. -->
+<div class="p-slidemenu p-component menu">
+
+  <div>
+  <app-headermenu #HeadermenuComponent></app-headermenu>
+  <!--Contient tous les onglets-->
+  <div class="menu-content">
+    <!-- onglet Menu -->
+        <a routerLink="/compte" class="p-menuitem-link" (click)="resetAll()">
+          <p class="p-menuitem-icon custom-icons icon-dashboard"></p>
+          <div class="p-menuitem-description">
+            <span class="p-menuitem-text">Menu</span>
+          </div>
+        </a>
+      <!--fin onglet Menu-->
+
+
+      <!-- Boucle sur chaque item du menu -->
+        <div *ngFor="let item of items, let index = index" class="menu-items">
+            <!-- Div qui contient les Icones + les textes du menu -->
+              <div
+                routerLinkActive="active"
+                class="p-menuitem-link"
+                [ngClass]="{'isExpanded': item.expanded==true, 'isDisabled':item.disabled, 'active':item.state?.['active']}"
+                >
+
+                <!-- ICONE -->
+                <div class="iconAlignment" (click)="clickOnIcon(item)" >
+                  <p [pTooltip]="item.label" class="p-menuitem-icon" 
+                  [ngClass]="{'isIconDisabled':item.disabled}" *ngIf="item.icon" [class]="item.icon"></p>
+                </div>
+                <!-- TEXT -->
+                 <div class="p-menuitem-submenu">
+                    <div class="p-menuitem-description"  (click)="clickOnText(item)">
+                      <span
+                        class="p-menuitem-text"
+                        [ngClass]="{'isTextDisabled':item.disabled}"
+                        >{{ item.label }}
+                      </span>
+
+                      <!-- Ajout de l'icone flèche vers le bas affichée quand l'onglet est cliqué -->
+                      <div [hidden]="!item.expanded" *ngIf="item.items">
+                        <span
+                        class="p-submenu-icon pi pi-fw pi-angle-down"
+                        >
+                        </span>
+                      </div>
+                      <!-- Fin flèche -->
+                    </div>
+                    <!-- Fin div juste text et flèche -->
+
+                    <!--SUBMENU -->
+                    <app-submenu *ngIf="item.items" [hidden]="!item.expanded" [items]="item.items"></app-submenu>
+                </div>
+                <!-- Fin div text + submenu -->
+
+              </div>
+              <!-- Fin div Icon + text -->
+
+        </div>
+        <!-- Fin de la boucle sur les onglets -->
+  </div>
+  <!--Fin de tous les onglets-->
+  </div>
+
+    <app-footermenu></app-footermenu>
+</div>
+

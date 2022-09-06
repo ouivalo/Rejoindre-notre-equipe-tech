@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: db-mysql
+    image: mysql:5.6
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'my_db'
+       MYSQL_USER: 'ouivalo'
+       MYSQL_PASSWORD: 'password'
+       MYSQL_ROOT_PASSWORD: 'password'
+       MYSQL_HOST: 'db'
+       MYSQL_PORT: 3306
+       MYSQL_ROOT_HOST: '%'
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 20s
+      retries: 10
+
+  web:
+    container_name: app-django
+    build: ./back/
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./back/:/back/
+    ports:
+      - "8000:8000"
+    depends_on:
+      # on vérifie que le healthcheck est bien réalisé
+      db:
+        condition: service_healthy
+
+    environment:
+      MYSQL_DATABASE: 'my_db'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_HOST: 'db'
+      MYSQL_PORT: 3306
+      DEBUG: 'True'
+      ALLOWED_HOSTS: "*"
+  
+  front:
+    container_name: front-angular
+    # avec tty le conteneur ne se ferme pas automatiquement
+    tty: true
+    build: ./front/
+    depends_on:
+      - db
+    volumes:
+      - ./front/:/app/
+      - ./back/static/front/:/app/dist/
+      - /app/node_modules/
+    ports:
+      - "4200:4200"

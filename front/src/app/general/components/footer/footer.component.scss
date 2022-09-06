@@ -1,0 +1,24 @@
+.footer{
+    &-content{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        color:var(--dark-grey);
+        margin-top:5px;
+        font-size: 13px !important;
+        p{
+            margin:0;
+        }
+    }
+    &-links{
+        >a{
+            margin-right:10px;
+            color:var(--dark-grey);
+            &:hover{
+                text-decoration: underline;
+            }
+            font-size: 13px !important;
+        }
+    }
+
+}

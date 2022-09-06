@@ -1,0 +1,56 @@
+.recap{
+    &-felicitations{
+        width:100%;
+        text-align: center;
+        margin-bottom:20px;
+        h2{
+            margin:0;
+        }
+    }
+    &-title{
+        font-weight:700;
+    }
+    &-wrap{
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        gap:10px;
+        flex-wrap: wrap;
+        margin-bottom:20px;
+        >div{
+            
+            flex-grow: 1
+        }
+        .recap-blocs{
+            margin:0;
+        }
+        &.min-size{
+            width:60%;
+        }
+    }
+
+    &-blocs{    
+        &.descriptif{
+            white-space: pre-line;
+            >p{
+                max-height: 350px;
+            }
+            .descriptif-auth{
+                max-height:150px;
+            }
+        }
+    }
+    &-buttons{
+        display:flex;
+        gap:25px;
+        width:100%;
+        justify-content: center;
+    }
+} 
+    // TODO supprimer les margin et font-size
+        p{
+            margin:0;
+        }
+   span{
+            font-size:13px;
+        }

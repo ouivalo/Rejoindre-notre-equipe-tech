@@ -1,0 +1,27 @@
+// On peut écraser le style qu'il y a dans le thème test2.scss avec un ::ng-deep
+::ng-deep{
+    .p-datatable{
+        >.p-datatable-header{
+            background-color: white;
+            border:none;
+            }
+
+    }
+}
+
+:host {
+  height: 100%;
+
+  ::ng-deep .p-datatable > .p-datatable-header {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+}
+
+.col-fit-content {
+  width: 1%;
+  white-space: nowrap;
+}
+

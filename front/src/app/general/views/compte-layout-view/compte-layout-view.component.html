@@ -1,0 +1,8 @@
+<div class="page" *ngIf="profilConnected">
+    <app-menu></app-menu>
+    <app-header>  </app-header>
+    <p-card class="content" [class.dark]="darkMode" [class.paramspage]="paramPage">
+      <router-outlet></router-outlet>
+    </p-card>
+  <app-footer></app-footer>
+</div>

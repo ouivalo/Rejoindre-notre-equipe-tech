@@ -1,0 +1,56 @@
+<app-return-button *ngIf="isFirstConnexion"></app-return-button>
+<app-landing-page-card-custom [headerTitle]="titre" *ngIf="form.value && !errorUser && !errorAccess">
+    <form [formGroup]="form" (ngSubmit)="sendData()" class="content">
+        <small *ngIf="isNotCompleted" class="p-error">Merci de bien remplir tous les champs.</small>
+    <input type="text" formControlName="nom" pInputText placeholder="Nom de la certification" [ngClass]="{'required':!form.value.nom && isNotCompleted}"/>
+    <div class="multiple-inputs">
+        
+        <p-dropdown [options]="certificationTypes" formControlName="type" (onChange)="disableLevels()" optionLabel="nom" optionValue="id" [ngClass]="{'required':!form.value.type && isNotCompleted}" ></p-dropdown>
+        
+        <p-dropdown [options]="certificationLevels" formControlName="niveau" [ngClass]="{'required':!form.value.niveau && isNotCompleted}" ></p-dropdown>
+        <!-- <input pInputText formControlName="niveau" placeholder="Niveau de certification" [ngClass]="{'required':!form.value.niveau && isNotCompleted}"> -->
+    </div>
+    <input type="text" pInputText formControlName="domaine" placeholder="Domaine de formation"  [ngClass]="{'required':!form.value.domaine && isNotCompleted}">
+
+    <textarea formControlName="descriptif" [rows]="5" [cols]="50" pInputTextarea [autoResize]="true" placeholder="Descriptif"  [ngClass]="{'required':!form.value.descriptif&& isNotCompleted}"></textarea>
+
+    <p-inputNumber formControlName="numero" class="input-number-custom" placeholder="N° fiche RNCP/RS"  [ngClass]="{'required':!form.value.numero && isNotCompleted}"></p-inputNumber>
+    <div class="multiple-inputs">
+        <input type="text" formControlName="certificateur" pInputText placeholder="Certificateur"  [ngClass]="{'required':!form.value.certificateur&& isNotCompleted}" />
+        <input type="text" formControlName="validateur" pInputText placeholder="Validateur"  [ngClass]="{'required':!form.value.validateur && isNotCompleted}" />
+    </div>
+    <small *ngIf="ErrorDates" class="p-error">La date de début de validité doit être avant la date de fin de validité.</small>
+
+    <div class="form-certification-dates">
+        <div>
+            <p-inputMask [ngClass]="{'required': ((form.value.debut_validite=='' || !form.value.debut_validite) && isNotCompleted) || ErrorDates}" 
+            mask="99/99/9999" placeholder="jj/mm/aaaa" 
+            slotChar="dd/mm/yyyy"
+            formControlName="debut_validite"></p-inputMask>
+
+        </div>
+        <div>
+            <p-inputMask [ngClass]="{'required': ((form.value.fin_validite=='' || !form.value.fin_validite) && isNotCompleted) || ErrorDates}" 
+            mask="99/99/9999" placeholder="jj/mm/aaaa" 
+            slotChar="dd/mm/yyyy"
+            formControlName="fin_validite"></p-inputMask>
+
+        </div>
+    </div>
+    <p-inputNumber class="input-number-custom" formControlName="identifiant_cpf" placeholder="Identifiant CPF"  [ngClass]="{'required':!form.value.identifiant_cpf && isNotCompleted}" ></p-inputNumber>
+
+    <div class="buttons">
+        <button *ngIf="!isFirstConnexion" pButton label="Annuler" class="p-button-outlined" (click)="goBack()"></button>
+        <button pButton label="Confirmer" [ngClass]="isFirstConnexion ? 'w-100':''" type="submit"></button>
+    </div>
+    </form>
+</app-landing-page-card-custom>
+
+
+<p-dialog [(visible)]="error" header="Erreur" [style]="{width: '300px'}" [closable]="false" [modal]="true">
+    {{errorMessage}}    
+    <ng-template pTemplate="footer">
+        <button pButton *ngIf="errorEnvoiForm" (click)="error=false; errorEnvoiForm=false" label="Retour au formulaire"></button>
+        <button pButton routerLink="/compte/profils" label="Retour à la page Profils"></button>
+    </ng-template>
+</p-dialog>

@@ -1,0 +1,194 @@
+@import "../../components/menu/menuvariables";
+
+;
+app-menu {
+  grid-area: menu;
+}
+
+app-header {
+  grid-area: header;
+  //min-height:50px;
+}
+
+.content {
+  grid-area: content;
+
+  > .p-card-content {
+    padding-top: 0;
+  }
+
+  overflow: auto
+}
+
+::ng-deep {
+  .p-card {
+    height: 100%;
+    box-shadow: none;
+    border-radius: 16px !important;
+
+    &-content {
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      flex-grow: 1;
+      .content-card-flex{
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow: auto;
+      }
+    }
+
+    &-body {
+      height: 100%;
+    }
+  }
+}
+
+app-footer {
+  grid-area: footer;
+}
+:host ::ng-deep {
+  app-container{
+    display:flex;
+    flex-direction:column;
+    height: auto;
+    flex-grow: 1;
+  }
+    p-table{
+      flex-grow:1;
+    }
+    
+  .subcard-container{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.page {
+  padding: 8px 8px 0 8px;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  min-height: 500px;
+  grid-template-columns: $widthMenu auto;
+  grid-template-rows: 0fr 1fr 0fr;
+  grid-template-areas:
+    "menu header"
+    "menu content"
+    ". footer";
+  column-gap: 30px;
+}
+
+.content, app-menu {
+  height: 100%;
+}
+
+:host::ng-deep p-card {
+  &.paramspage{
+    .p-card .p-card-body{
+      padding:0;
+    }
+  }
+  &.dark {
+    hr {
+      background-color: #FFFFFF;
+    }
+
+    :not(.p-dialog *) > input {
+      border-color: #C7CCD0;
+      background-color: #616163;
+      color: #FFFFFF;
+
+      &:hover {
+        border-color: #C7CCD0;
+      }
+
+      &:focus {
+        border-color: #C7CCD0;
+      }
+
+      &:active {
+        border-color: #C7CCD0;
+      }
+    }
+
+    .p-card {
+      background-color: #4F4F52;
+      color: #FFFFFF;
+      --background-color: #F0F2F5;
+
+      .headercard-description {
+        color: #4F4F52;
+      }
+
+      .pi:not(.p-button-icon) {
+        color: #FFFFFF;
+      }
+
+      .p-datatable {
+        .p-datatable-tbody {
+          tr {
+            //background-color: #616163;
+            background-color: #4F4F52;
+            color: #FFFFFF;
+          }
+        }
+
+        .p-datatable-thead {
+
+          tr {
+            //border: 1px solid #C7CCD0;
+
+            th {
+              background-color: #616163;
+              color: #FFFFFF;
+
+              &:first-child {
+                //border-bottom-left-radius: 0;
+              }
+
+              //&:last-child {
+              //  border-top-right-radius: 9px
+              //}
+            }
+          }
+        }
+      }
+
+      //.p-dialog {
+      //  .p-dialog-content {
+      //    background-color: green;
+      //  }
+      //}
+
+      :not(.cta-container) > .p-button:not(.button-icon) {
+        background-color: #FFFFFF;
+        border: 0;
+        color: #4F4F52;
+
+        &:hover {
+          background-color: #FFFFFF;
+        }
+
+        &:active {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+
+
+  }
+}
+
+::ng-deep .p-datatable {
+  overflow: auto !important;
+  width: 100% !important;
+}
+
+:host ::ng-deep app-parametres-view{
+  height:100%;
+}

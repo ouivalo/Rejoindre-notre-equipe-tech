@@ -1,0 +1,65 @@
+<div *ngIf="isProfilsPage" class="recap-felicitations">
+    <h2>Félicitations</h2>
+    <p>Vous avez déposé votre certification !</p>
+    <p>Vous allez pouvoir accéder à la gestion de vos certifications.</p>
+</div>
+<p *ngIf="isProfilsPage" class="recap-title">Récapitulatif de la certification.</p>
+<div class="recap-wrap">
+    <div class="recap-blocs" *ngIf="certification.niveau">
+        <span >Niveau de certification</span>
+        <p>{{certification.niveau}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >Nom de la certification</span>
+        <p>{{certification.nom}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >Type de certification</span>
+        <p>{{certificationTypeName}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >N° fiche RCNP/RS</span>
+        <p>{{certification.numero}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >Certificateur</span>
+        <p>{{certification.certificateur}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >Début de validité</span>
+        <p>{{certification.debut_validite}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span >Fin de validité</span>
+        <p>{{certification.fin_validite}}</p>
+    </div>
+
+</div>
+<div class="recap-blocs descriptif">
+    <p [ngClass]="{'descriptif-auth':isAuthPage}" >{{certification.descriptif}}
+    </p>
+</div>
+<div class="recap-wrap"  [ngClass]="{'min-size':!isAuthPage}">
+    <div class="recap-blocs">
+        <span>Domaine de formation</span>
+        <p>{{certification.domaine}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span>Validateur</span>
+        <p>{{certification.validateur}}</p>
+    </div>
+    <div class="recap-blocs">
+        <span>Lien CPF</span>
+        <p>{{certification.identifiant_cpf}}</p>
+    </div>
+</div>
+<app-checkboxes-confirm-data *ngIf="isAuthPage"></app-checkboxes-confirm-data>
+<button *ngIf="isAuthPage; else otherButtons" pButton label="Confirmer" class="w-100" (click)="sendData()"></button>
+<ng-template #otherButtons>
+    <div class="recap-buttons" *ngIf="isProfilsPage">
+
+        <button routerLink="/compte/profils" pButton label="Revenir à la gestion des profils"></button>
+        <button routerLink="/compte/profils" pButton label="Commencer et ajouter mes partenaires"></button>
+        <button routerLink="/compte/profils"  pButton label="Commencer et accéder au menu"></button>
+    </div>     
+</ng-template>

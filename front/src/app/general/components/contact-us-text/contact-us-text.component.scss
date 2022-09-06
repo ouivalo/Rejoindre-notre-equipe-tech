@@ -1,0 +1,15 @@
+a{
+    margin:0;
+    padding-left:2px;
+    font-weight: bold;
+    font-size:10px;
+    color:var(--linear-dark-mud);
+    &:hover{
+        text-decoration: underline;
+    }
+}
+p{
+    margin:0;
+    font-size:10px;
+    text-align: center;
+}

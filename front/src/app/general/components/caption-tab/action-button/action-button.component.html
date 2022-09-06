@@ -1,0 +1,8 @@
+<button pButton (click)="openPanelAction($event)" label="Actions" [style]="{width:'100px'}" [disabled]="!actions || actions.length===0" [ngClass]="{'button-clicked':isOpen&&actions.length>0}"></button>
+
+<p-overlayPanel (onShow)="isOpen=true" (onHide)="isOpen=false"  [style]="{padding:'0', width:'100px','background-color': '#ffff', 'color':'var(--linear-grey)', 'margin-top':0, 'border-top-left-radius':0, 'border-top-right-radius':0}" #op>
+    <ng-template pTemplate>
+
+        <p *ngFor="let action of actions" (click)="doActions(action.action)" class="overlay-actions">{{action.name}}</p>
+    </ng-template>
+</p-overlayPanel>

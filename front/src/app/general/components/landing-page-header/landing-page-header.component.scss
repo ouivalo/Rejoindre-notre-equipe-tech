@@ -1,0 +1,27 @@
+.landing-page-header{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px;
+    margin: 0 70px;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    p{
+       margin:0;
+       font-size: 14px;
+       color:var(--linear-dark-mud);
+       font-weight: bold;
+    }
+    &-links{
+        display:flex;
+        flex-direction: row;
+        gap:50px;
+        align-items: center;
+        a{
+            font-size: 14px;
+            color:var(--linear-dark-mud);
+
+        }
+    }
+}

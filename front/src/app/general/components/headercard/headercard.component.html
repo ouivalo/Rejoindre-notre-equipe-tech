@@ -1,0 +1,9 @@
+<div class="headercard">
+    <div class="headercard-title">
+        <h1>{{headerTitle}}</h1>
+    </div>
+    <div *ngIf="description" class="headercard-description">
+        <p>{{description}}</p>
+        <ng-content></ng-content>
+    </div>
+</div>

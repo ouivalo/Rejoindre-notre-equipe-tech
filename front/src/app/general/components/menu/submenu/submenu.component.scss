@@ -1,0 +1,20 @@
+:host::ng-deep {
+    .submenu{
+        font-weight: normal;
+        position:absolute;
+        margin-left:5px;
+        display:grid;
+        grid-template-columns: 1;
+        &-item{
+            margin-top:10px;
+            color:var(--primary-color-text);
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+            }
+            &.active{
+                font-weight: bold;
+            }
+        }
+    }
+}

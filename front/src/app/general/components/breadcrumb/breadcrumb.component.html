@@ -1,0 +1,26 @@
+<div class="header-breadcrumb">
+    <i class="pi pi-home"></i>
+
+    <div *ngFor="let item of this.items" routerLinkActive="active" class="hidden">
+
+        <span> 
+            <span class="divider"> |</span>
+            <a *ngIf="item['items'] != undefined && item['items'] != null">
+                {{ item.label }}
+            </a>
+            <a *ngIf="item['items'] == undefined || item['items'] == null"
+                [routerLink]="item.routerLink">
+                {{ item.label }}
+            </a>
+        </span>
+        
+        <span *ngIf="item['items'] != undefined && item['items'] != null">
+            <span class="hidden" *ngFor="let sousitem of item.items" routerLinkActive="active">
+                <span class="divider">|</span>
+                <strong [routerLink]="sousitem.routerLink">
+                    {{ sousitem.label }}
+                </strong>
+            </span>
+        </span>
+    </div>
+</div>

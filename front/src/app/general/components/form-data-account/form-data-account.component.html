@@ -1,0 +1,65 @@
+<form [formGroup]="form" (ngSubmit)="sendData()" *ngIf="form.controls['nom']" class=content [ngClass]="{'updateForm':!isFirstConnexion}">
+    <div class="multiple-inputs inputs2">
+
+        <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+            <span *ngIf="!isFirstConnexion">Prénom</span>
+            <input type="text" formControlName="prenom" pInputText placeholder="Prénom" />
+        </div>
+
+        <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+            <span *ngIf="!isFirstConnexion">Nom</span>
+            <input type="text" formControlName="nom" pInputText placeholder="Nom" />
+        </div>
+    </div>
+
+    <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+        <span *ngIf="!isFirstConnexion">Entreprise/organisme</span>
+        <input type="text" formControlName="entreprise" pInputText placeholder="Entreprise" />
+    </div>
+    <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+        <span *ngIf="!isFirstConnexion">Email</span>
+        <input type="text" formControlName="email" pInputText placeholder="Mail" />
+    </div>
+    <div *ngIf="isFirstConnexion" [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+
+        <span class="form-first-connexion-email">*l'adresse mail doit être identique</span>
+        <input type="text"  formControlName="confirm_email" pInputText placeholder="Confirmation adresse mail" />
+    </div>
+
+    <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+        <span *ngIf="!isFirstConnexion">Numéro SIRET</span>
+        <p-inputNumber formControlName="siret" placeholder="Numéro SIRET" class="input-number-custom"></p-inputNumber>
+    </div>
+    <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+
+        <span *ngIf="!isFirstConnexion">Numéro de téléphone</span>
+        <p-inputMask mask="(+33)  9 99 99 99 99" formControlName="telephone" placeholder="(+33)  x xx xx xx xx" class="input-number-custom" ></p-inputMask>
+    </div>
+
+    <div  [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+        <span *ngIf="!isFirstConnexion">Adresse</span>
+        <input type="text" formControlName="adresse" pInputText placeholder="Adresse" />
+    </div>
+    <div class="multiple-inputs inputs3">
+        <div [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+            <span *ngIf="!isFirstConnexion" >Ville</span>
+            <input type="text"  formControlName="ville" pInputText placeholder="Ville" />
+        </div>
+
+        <div  [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+            <span *ngIf="!isFirstConnexion">Code postal</span>
+            <p-inputNumber formControlName="code_postal" placeholder="Code postal" class="input-number-custom"  ></p-inputNumber>
+
+            <!-- <input type="number" formControlName="code_postal" pInputText placeholder="Code postal" /> -->
+        </div>
+
+        <div  [class]="isFirstConnexion ? 'form-first-connexion':'form-modif'">
+            <span *ngIf="!isFirstConnexion">Pays</span>
+            <input type="text" formControlName="pays" pInputText placeholder="Pays" />
+        </div> 
+    </div>
+    <small *ngIf="error" class="p-error">{{errorMessage}}</small>
+    <button *ngIf="isFirstConnexion" pButton label="connexion" class="w-100" type="submit"></button>
+
+
+</form>

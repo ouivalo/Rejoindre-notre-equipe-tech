@@ -1,0 +1,15 @@
+:host::ng-deep button.p-element.p-button.p-component.button-clicked {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    &:focus{
+        box-shadow:none;
+    }
+}
+
+::ng-deep.overlay-actions{
+    text-align:center;
+    &:hover{
+        cursor:pointer;
+        text-decoration: underline;
+    }
+}   

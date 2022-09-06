@@ -1,0 +1,37 @@
+.form-first-connexion-email{
+    font-size:10px;
+    margin-top:0;
+}
+.multiple-inputs{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    &.inputs2>div{
+        width: 50%;
+    }
+    &.inputs3{
+        flex-wrap: wrap;
+        div{
+            width:32%;
+        }
+    }
+}
+
+.form-modif{
+    display:flex;
+    flex-direction:column;
+}
+.updateForm{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+:host ::ng-deep .input-number-custom{
+    width:100%;
+    >span.p-inputnumber, >input.p-inputmask{
+        width:100%;
+    }
+  
+  }
+  

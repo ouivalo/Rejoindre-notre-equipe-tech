@@ -1,0 +1,22 @@
+<div>
+  <div *ngFor="let item of items"
+      routerLinkActive="active"
+      class="p-menuitem-link footermenu-content  {{ item.style }}"
+    >
+
+      <!-- Ici, on affiche le lien avec l'icone -->
+      <a [routerLink]="item.routerLink" class="iconAlignment">
+        <p [pTooltip]="item.label" class="p-menuitem-icon" *ngIf="item.icon" [ngClass]="item.icon"></p>
+      </a>
+
+      <!-- Ici, on affiche le texte, seulement si un onglet n'est pas ouvert.  -->
+      <div [routerLink]="item.routerLink" class="p-menuitem-description" 
+    >
+        <!-- Span qui contient le texte -->
+        <span
+          class="footermenu-text"
+          >{{ item.label }}</span>
+      </div>
+
+  </div>
+</div>

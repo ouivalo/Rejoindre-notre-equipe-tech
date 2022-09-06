@@ -1,0 +1,12 @@
+<div class="landing-page-header">
+    <p>BLUE DEGREE</p>
+    <div class="landing-page-header-links">
+        <a routerLink="/abonnements" *ngIf="!isProfilPage">Abonnements</a>
+        <a routerLink="/abonnements"  *ngIf="!isProfilPage">Services</a>
+        <a routerLink="/abonnements">Nous contacter</a>
+
+        <p-button *ngIf="!isLoggedIn" routerLink='/authentification/connexion' label="CONNEXION"></p-button>
+        <p-button *ngIf="isLoggedIn" (click)="deconnexion()" label="DECONNEXION"></p-button>
+
+    </div>
+</div>

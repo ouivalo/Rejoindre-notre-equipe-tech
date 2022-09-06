@@ -1,0 +1,45 @@
+:host .form-certification{
+    &-dates{
+        display: flex;
+        gap:5px;
+        width:100%;
+        div{
+            width:100%;
+            ::ng-deep .p-calendar{
+                width:100%;
+            }
+        }
+    }
+}
+p-dropdown{
+    width:100%;
+  }
+
+:host ::ng-deep .input-number-custom{
+    width:100%;
+    >span.p-inputnumber{
+        width:100%;
+    }
+
+}
+
+.multiple-inputs{
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    width:100%;
+}
+
+.buttons{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.required{
+    border-color: red;
+    ::ng-deep .p-inputtext{
+        border-color: red;
+    }
+}

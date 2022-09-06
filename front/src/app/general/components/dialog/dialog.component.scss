@@ -1,0 +1,32 @@
+::ng-deep .dialog-custom{
+    .p-dialog{
+        &-header{
+            padding:0 !important;
+            font-weight:700;
+            text-align:center !important;
+            display: block !important;
+            &-icons{
+                position:absolute;
+                right:1px;
+                top:1px;
+            }
+        }
+        .p-dialog-content {
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+    } 
+}
+::ng-deep .dialog-custom hr{
+    width:auto;
+    height:1px;
+    border:none;
+    background-color: var(--text-color);
+    margin:0;
+    padding:0;
+}
+
+::ng-deep .dialog-custom.p-dialog .p-button{
+    border-radius:18px !important;
+    padding:3px 15px;
+}
