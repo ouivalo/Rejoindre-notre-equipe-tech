@@ -4,10 +4,10 @@ Envie de rejoindre ouivalo ? 🌱
 Développeur web aguerri ou bien apprenti en herbe, mais dans tous les cas, plein de détermination ? 
 Voici une checklist que nous te proposons pour avoir une belle candidature qui soit mise en avant 🙌 
 
-## Un e-mail de candidature bien agencé  
+## Un e-mail de candidature bien agencé 👌 
 
 * en *objet du mail*, indique-nous : 
-   - [] le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
+   - le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
    - le type de contrat que tu cherches : `STAGE`, `ALTERNANCE`, `CDD`, `PARTIEL`, `CDI`
    - la durée du contrat si tu en as une, exemples : 1 ans, 4 mois, 8 semaines ...
    - la date de début de ton contrat, exemples : `à partir de` sept, 14 nov
@@ -26,8 +26,10 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 ```
 🌱 n'hésite pas à héberger tes fichiers sur ton hébergement de documents favori, et à nous partager uniquement le lien d'accès, c'est mieux pour les serveurs
 ```
-* le tout envoyé à cette adresse e-mail magique : *`candidat.e@ouivalo.fr`* 
+* le tout envoyé à cette adresse e-mail magique : *`candidat.e@ouivalo.fr`* 🚀 
+
 
 ## Une démo de tes capacités et de ta résiliance
+
 
 ## Un petit grain de folie 
