@@ -35,8 +35,8 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 
 Si tu le souhaites, nous te proposons le défi suivant : nous envoyer un message sur une de nos APIs. 
 
-* Pour cela, tu peux utiliser le framework de ton choix (front ou back)
-* Développer un projet à l'intérieur d'un conteneur (Docker par exemple) 
+* Pour cela, tu peux créer un projet sur le framework de ton choix (front ou back)
+* Mettre en place ton projet à l'intérieur d'un conteneur (Docker par exemple) 
 * Créer un formulaire proposant les champs nécessaires à l'envoi de données
 * Au submit du formulaire, envoyer les données à l'API : 
     - url de l'API : https://script.google.com/macros/s/AKfycby-TJmFFUFTfiNUbMoSIZx8LVtiskQ-bUt4xO6hmrU0XQpJS8IPUBow/exec 
