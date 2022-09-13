@@ -1,8 +1,8 @@
 # OUIVALO | Rejoindre notre équipe tech
 
 Envie de rejoindre ouivalo ? 🌱
-Développeur web aguerri ou bien apprenti en herbe, mais dans tous les cas, plein de détermination ? 
-Voici une checklist que nous te proposons pour avoir une belle candidature qui soit mise en avant 🙌 
+Développeur web aguerri ou bien apprenti en herbe, mais dans tous les cas, plein de détermination ?   
+Voici une checklist que nous te proposons pour avoir une belle candidature qui soit mise en avant et qu'on puisse traiter rapidement 🙌 
 
 ## 1 - Un e-mail de candidature bien agencé 👌 
 
