@@ -68,4 +68,17 @@ Mais montre-nous tout de même que tu as essayé, et montre-nous tes pistes de t
 
   
 
-## 3 - Un petit grain de folie 
+## 3 - Un petit grain de folie 🎨
+
+N'hésite pas à laisser s'exprimer ta créativité pour mettre en avant ta candidature ! 🥳
+
+Bien entendu, j'ai pris le temps de rédiger cette petite check list pour t'assurer qu'on puisse traiter ta candidature le plus rapidement possible. 
+Nous sommes une petite équipe, et n'arrivons pas toujours à répondre à toutes les candidatures qui souvent sont incomplètes. 
+Mais tu peux si tu le souhaites tenter de candidater par d'autres biais, mais nous ne pourrons pas garantir notre réactivité.
+
+A très vite j'espère pour détourner un maximum de déchets de la poubelle, dans une belle aventure humaine 🌱
+
+
+
+
+
