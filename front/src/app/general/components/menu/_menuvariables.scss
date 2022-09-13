@@ -1,9 +1,0 @@
-@use "sass:math";
-//longueur du menu 
-$widthMenu : 255px;
-
-//Taille en pourcentage de la partie icones
-$iconPartNumber:22;
-$iconsPartSize : $iconPartNumber+0%;
-//Taille en pixels de la partie texts
-$textPartSize : math.ceil(calc($widthMenu * (100 - $iconPartNumber) / 100))-0px;

@@ -1,7 +1,0 @@
-.env.dist
-.gitignore
-.git
-Dockerfile
-docker-compose.yml
-README.md
-.vscode
