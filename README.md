@@ -20,6 +20,7 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
    - quelle est l'adéquation entre `tes compétences / celles que tu souhaites développer` et `les technologies que nous portons / nos méthodes de travail`
    - si tu n'habites pas à Nantes, comment tu penses faire pour venir nous voir régulièrement, ou le cas échéant montre-nous tes aptitudes à télétravailler
    - quelle personne seras-tu dans l'équipe, quelles valeurs tu amèneras à l'équipe
+   - 2 / 3 créneaux sur lesquels nous pourrions convenir d'un rendez-vous pour échanger plus en détails
 * en **pièce jointe / en lien distant** :
    - ton CV, ou tout autre support permettant de retracer ton parcours de manière complète
    - tout support permettant de mettre en valeur tes compétences (portfolio, github, exemples de projets, ...)
