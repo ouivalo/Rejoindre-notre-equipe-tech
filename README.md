@@ -29,7 +29,19 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 * le tout envoyé à cette adresse e-mail magique : **`candidat.e@ouivalo.fr`** 🚀 
 
 
-## Une démo de tes capacités et de ta résiliance
+## Une démo de tes capacités et de ta résiliance 🏋️‍♀️
 
+Pour nous montrer ta motivation et l'adéquation avec nos process, nous te proposons le défi suivant : nous envoyer un message sur une de nos APIs. 
+
+* Pour cela, tu peux utiliser le framework de ton chois 
+
+
+```
+💡 Cette liste est la liste de ce que nous aimerions voir dans l'idéal. Nous sommes conscients que tu n'as pas forcément acquis tout ça encore.
+Mais montre-nous tout de même que tu as essayé, et montre-nous tes pistes de travail et ce qu'il t'a manqué. 
+```
+```
+❓ Pour toute question sur le sujet, ou demande d'aide, voici un mail support à qui tu peux t'adresser : *kevin@ouivalo.fr*
+```
 
 ## Un petit grain de folie 
