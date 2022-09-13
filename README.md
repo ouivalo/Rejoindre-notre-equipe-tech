@@ -2,12 +2,12 @@
 
 Envie de rejoindre ouivalo ? 🌱
 Développeur web aguerri ou bien apprenti en herbe, mais dans tous les cas, plein de détermination ? 
-Voici quelques étapes que nous te proposons pour avoir une belle candidature qui soit mise en avant 🙌 
+Voici une checklist que nous te proposons pour avoir une belle candidature qui soit mise en avant 🙌 
 
 ## Un e-mail de candidature bien agencé  
 
 * en *objet du mail*, indique-nous : 
-   - le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
+   - [] le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
    - le type de contrat que tu cherches : `STAGE`, `ALTERNANCE`, `CDD`, `PARTIEL`, `CDI`
    - la durée du contrat si tu en as une, exemples : 1 ans, 4 mois, 8 semaines ...
    - la date de début de ton contrat, exemples : `à partir de` sept, 14 nov
