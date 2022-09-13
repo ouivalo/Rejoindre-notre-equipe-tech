@@ -63,7 +63,7 @@ Indication : il est possible que tu aies besoin d'autoriser la redirection de ta
 Mais montre-nous tout de même que tu as essayé, et montre-nous tes pistes de travail et ce qu'il t'a manqué. 
 ```
 ```
-❓ Pour toute question sur le sujet, ou demande d'aide, voici un mail support à qui tu peux t'adresser : kevin@ouivalo.fr
+❓ Pour toute question sur le sujet, ou demande d'aide, je te recommande de rédiger une issue sur ce repo, nous la traiterons rapidement. Si vraiment ce n'est pas possible, voici un mail support à qui tu peux t'adresser : kevin@ouivalo.fr
 ```
 
   
