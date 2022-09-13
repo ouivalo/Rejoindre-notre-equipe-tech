@@ -30,9 +30,9 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 
   
   
-## 2 - Une démo de tes capacités et de ta résiliance 🏋️‍♀️
+## 2 - Un défi pour mettre en avant tes capacités et de ta résiliance 🏋️‍♀️
 
-Pour nous montrer ta motivation et l'adéquation avec nos process, nous te proposons le défi suivant : nous envoyer un message sur une de nos APIs. 
+Si tu le souhaites, nous te proposons le défi suivant : nous envoyer un message sur une de nos APIs. 
 
 * Pour cela, tu peux utiliser le framework de ton choix (front ou back)
 * Développer un projet à l'intérieur d'un conteneur (Docker par exemple) 
@@ -47,8 +47,6 @@ Pour nous montrer ta motivation et l'adéquation avec nos process, nous te propo
             adresse e-mail de ta candidature
           - "date" | Date
             date de l'essai
-          - "tagRfid" | String
-            "TEST" ou "
           - "urlRelais" | String
             url de ton repo Git à consulter hébergeant ton travail 
             Exemple : “les-hameaux-bio-nantes”
@@ -56,6 +54,8 @@ Pour nous montrer ta motivation et l'adéquation avec nos process, nous te propo
             Un petit mot doux que tu as à nous faire passer
 
 * Mettre tout cela sur un repo Git à nous partager 
+
+Indication : il est possible que tu aies besoin d'autoriser la redirection de ta requête HTTP, car l'API en effectue une. 
 
 ```
 💡 Cette liste est la liste de ce que nous aimerions voir dans l'idéal. Nous sommes conscients que tu n'as pas forcément acquis tout ça encore.
