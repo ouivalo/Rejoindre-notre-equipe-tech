@@ -4,7 +4,7 @@ Envie de rejoindre ouivalo ? 🌱
 Développeur web aguerri ou bien apprenti en herbe, mais dans tous les cas, plein de détermination ? 
 Voici une checklist que nous te proposons pour avoir une belle candidature qui soit mise en avant 🙌 
 
-## Un e-mail de candidature bien agencé 👌 
+## 1 - Un e-mail de candidature bien agencé 👌 
 
 * en **objet du mail**, indique-nous : 
    - le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
@@ -30,7 +30,7 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 
   
   
-## Une démo de tes capacités et de ta résiliance 🏋️‍♀️
+## 2 - Une démo de tes capacités et de ta résiliance 🏋️‍♀️
 
 Pour nous montrer ta motivation et l'adéquation avec nos process, nous te proposons le défi suivant : nous envoyer un message sur une de nos APIs. 
 
@@ -67,4 +67,4 @@ Mais montre-nous tout de même que tu as essayé, et montre-nous tes pistes de t
 
   
 
-## Un petit grain de folie 
+## 3 - Un petit grain de folie 
