@@ -42,8 +42,20 @@ Pour nous montrer ta motivation et l'adéquation avec nos process, nous te propo
     - méthode : POST
     - body de type `application / json` avec comme éléments :
       - `cle` | String : écrire `“CLE-TEST-IOT”` par défaut
-      - `donnees`
+      - `donnees` | Dictionnaire :
+          - "id" | String
+            adresse e-mail de ta candidature
+          - "date" | Date
+            date de l'essai
+          - "tagRfid" | String
+            "TEST" ou "
+          - "urlRelais" | String
+            url de ton repo Git à consulter hébergeant ton travail 
+            Exemple : “les-hameaux-bio-nantes”
+          - "message" | String
+            Un petit mot doux que tu as à nous faire passer
 
+* Mettre tout cela sur un repo Git à nous partager 
 
 ```
 💡 Cette liste est la liste de ce que nous aimerions voir dans l'idéal. Nous sommes conscients que tu n'as pas forcément acquis tout ça encore.
