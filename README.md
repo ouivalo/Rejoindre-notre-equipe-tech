@@ -9,7 +9,7 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
 * en **objet du mail**, indique-nous : 
    - le poste que tu souhaites occuper, si tu es par ici c'est que tu peux écrire : `DEV`
    - le type de contrat que tu cherches : `STAGE`, `ALTERNANCE`, `CDD`, `PARTIEL`, `CDI`
-   - la durée du contrat si tu en as une, exemples : 1 ans, 4 mois, 8 semaines ...
+   - la durée du contrat si tu en as une, exemples : 1 an, 4 mois, 8 semaines ...
    - la date de début de ton contrat, exemples : `à partir de` sept, 14 nov
 * dans le **corps du mail**, fais toi plaisir, mais surtout répond à toutes les premières questions qu'on se pose :
    - les infos administratives de ton contrat :
