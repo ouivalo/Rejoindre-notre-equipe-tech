@@ -11,7 +11,7 @@ Voici une checklist que nous te proposons pour avoir une belle candidature qui s
    - le type de contrat que tu cherches : `STAGE`, `ALTERNANCE`, `CDD`, `PARTIEL`, `CDI`
    - la durée du contrat si tu en as une, exemples : 1 an, 4 mois, 8 semaines ...
    - la date de début de ton contrat, exemples : `à partir de` sept, 14 nov
-* dans le **corps du mail**, fais toi plaisir, mais surtout répond à toutes les premières questions qu'on se pose :
+* dans le **corps du mail**, fais toi plaisir, mais surtout réponds à toutes les premières questions qu'on se pose :
    - les infos administratives de ton contrat :
         - date de début et date de fin souhaitées
         - dans le cas d'un stage ou d'une alternance, l'organisme de formation que tu as intégré ou que tu souhaites intégrer, ainsi que le diplôme préparé
