@@ -41,7 +41,7 @@ Si tu le souhaites, nous te proposons le défi suivant : nous envoyer un message
 * Au submit du formulaire, envoyer les données à l'API : 
     - url de l'API : https://script.google.com/macros/s/AKfycby-TJmFFUFTfiNUbMoSIZx8LVtiskQ-bUt4xO6hmrU0XQpJS8IPUBow/exec 
     - méthode : POST
-    - body de type `application / json` avec comme éléments :
+    - body avec comme éléments :
       - `cle` | String : écrire `“CLE-TEST-IOT”` par défaut
       - `donnees` | Dictionnaire :
           - "id" | String
